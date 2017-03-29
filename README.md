@@ -41,5 +41,99 @@
 
   客製控制項的 Renderer
 
+## ViewModel 內的資料與命令
+
+* vlMVVMObservableCollection
+
+  用於產生 MVVM 內的集合類型 Property，且可以呼叫 OnPropertyChanged
+
+* vlMVVMProperty
+
+  用於產生 MVVM 內的 Property，且可以呼叫 OnPropertyChanged
+
+* vlPrismCmd
+
+  Prism 的 DelegateCommand 宣告
+
+* vlPrismCmdPara
+
+  Prism 有參數的 DelegateCommand 宣告
+
+## 事件聚合器
+
+* vlPrismIEventAggregator
+
+  事件聚合器 建構式注入程式碼片段
+
+* vlPrismIEventAggregatorDeclaration
+
+  事件聚合器 保有注入物件的欄位程式碼片段
+
+* vlPrismIEventAggregatorInitialization
+
+  事件聚合器 將注入物件設定到欄位程式碼片段
+
+* vlEventClass
+
+  定義關注事件類別與Payload類別
+
+## 導航服務
+
+* vlPrismINavigationService
+
+  導航服務 建構式注入程式碼片段
+
+* vlINavigationServiceDeclaration
+
+  導航服務 保有注入物件的欄位程式碼片段
+
+* vlPrismINavigationServiceInitialization
+
+  導航服務 將注入物件設定到欄位程式碼片段
+
+## 對話窗服務
+
+* vlPrismIPageDialogService
+
+  對話窗服務 建構式注入程式碼片段
+
+* vlPrismIPageDialogServiceDeclaration
+
+  對話窗服務 保有注入物件的欄位程式碼片段
+
+* vlPrismIPageDialogServiceDInitialization
+
+  對話窗服務 將注入物件設定到欄位程式碼片段
+
+## ViewModel Region
+
+* vlViewModelRegionForModel
+
+  ViewModel 內可資料繫結子類別的 Region
+
+* vlViewModelRegionFullClass
+
+  整個ViewModel 含類別名稱的完整 Region
+
+* vlViewModelRegionSimpleClass
+
+  整個ViewModel 含類別名稱的簡易 Region
+
+## 其他
+
+* vlXAMLCompilation
+
+  XAML 編譯的宣告
+
+* vlUWPTitleStatusBarInitialization
+
+  UWP平台的狀態列配色
+
+* vlUnityContainer
+
+  取得 Prism 的 Unity 容器物件
+  
+  手動 註冊/解析 相依性物件
+
 
 2017.03.29 Vulcan Lee
