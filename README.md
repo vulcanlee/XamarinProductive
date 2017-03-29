@@ -21,4 +21,25 @@
 
 就會看到相關的程式碼片段清單
 
+# 可用的 Xamarin.Forms 程式碼片段
+
+## 可綁定/附加屬性/原生注入宣告
+
+* vlAttachedProperty
+
+  附加屬性的程式碼片段
+
+* vlBindableProperty
+
+  可綁定屬性的程式碼片段
+
+* vlOSDependency
+
+  原生專案中相依性服務類別宣告
+
+* vlRenderer
+
+  客製控制項的 Renderer
+
+
 2017.03.29 Vulcan Lee
