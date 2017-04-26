@@ -68,11 +68,13 @@ xfViewModelRegionSimpleClassForPrism.snippet
 整個ViewModel 含類別名稱的簡易 Region
 
 xfXAMLCompilation.snippet
-xfViewModelRegionForModelForProperty.snippet
+XAML 編譯的宣告
+
+xfViewModelRegionForModelForDogyPropertyChanged.snippet
 ViewModel 內可資料繫結子類別的 Region - 使用 PropertyChanged.Fody
 
-xfViewModelRegionFullClassForProperty.snippet
+xfViewModelRegionFullClassForFogyPropertyChanged.snippet
 整個ViewModel 含類別名稱的完整 Region - 使用 PropertyChanged.Fody
 
-xfViewModelRegionSimpleClassForProperty.snippet
+xfViewModelRegionSimpleClassForFogyPropertyChanged.snippet
 整個ViewModel 含類別名稱的簡易 Region - 使用 PropertyChanged.Fody
