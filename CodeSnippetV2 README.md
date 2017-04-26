@@ -78,3 +78,24 @@ xfViewModelRegionFullClassForFogyPropertyChanged.snippet
 
 xfViewModelRegionSimpleClassForFogyPropertyChanged.snippet
 整個ViewModel 含類別名稱的簡易 Region - 使用 PropertyChanged.Fody
+
+xfFodyImplementPropertyChanged
+Allows the injection of the INotifyPropertyChanged interface.
+
+xfFodyAlsoNotifyFor.snippet
+Allows the injection of notify code that points to a different property.
+
+xfFodyDoNotNotify.snippet
+Use this attribute to exclude a property or type from having notification injected.
+
+xfFodyDependsOn.snippet
+Injects this property to be notified when a dependent property is set.
+
+xfFodyDoNotSetChanged.snippet
+Used to ignore IsChanged for a given property.
+
+xfFodyDoNotCheckEquality.snippet
+Used to skip equality check for a given property.
+
+
+

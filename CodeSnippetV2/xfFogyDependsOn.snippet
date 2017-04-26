@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xfFodyDependsOn</Title>
+      <Author>[USERNAME]</Author>
+      <Description>Fody 要相依的屬性名稱之屬性宣告</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>xfFodyDependsOn</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>DependPropertyName</ID>
+          <ToolTip>相依的屬性名稱</ToolTip>
+          <Default>DependPropertyName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[DependsOn("$DependPropertyName$")]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

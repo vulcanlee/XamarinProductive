@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xfFodyAlsoNotifyFor</Title>
+      <Author>[USERNAME]</Author>
+      <Description>Fody 要通知有變動的屬性名稱之屬性宣告</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>xfFodyAlsoNotifyFor</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Notify_Property_Name</ID>
+          <ToolTip>要通知有變動的屬性名稱</ToolTip>
+          <Default>Notify_Property_Name</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[AlsoNotifyFor("$Notify_Property_Name$")]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
