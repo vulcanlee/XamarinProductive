@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xfUnityContainer</Title>
+      <Author>Windows 使用者</Author>
+      <Description>取得 Prism 的 IUnityContainer 物件</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>xfUnityContainer</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Delimiter="$"><![CDATA[        // 取得 Xamarin.Forms 中的 Prism 注入物件管理容器
+        IUnityContainer myContainer = (App.Current as PrismApplication).Container;
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
