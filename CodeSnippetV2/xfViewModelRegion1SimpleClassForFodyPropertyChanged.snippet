@@ -7,7 +7,8 @@
       </SnippetTypes>
       <Title>xfViewModelRegion1SimpleClassForFodyPropertyChanged</Title>
       <Author>Windows 使用者</Author>
-      <Description>整個ViewModel 含類別名稱的簡易 Region - 使用 PropertyChanged.Fody</Description>
+      <Description>
+      </Description>
       <HelpUrl>
       </HelpUrl>
       <Shortcut>xfViewModelRegion1SimpleClassForFodyPropertyChanged</Shortcut>
@@ -16,15 +17,16 @@
       <Declarations>
         <Literal Editable="true">
           <ID>ViewModelClassName</ID>
-          <ToolTip>ViewModel的類別名稱</ToolTip>
+          <ToolTip>ViewModelClassName</ToolTip>
           <Default>ViewModelClassName</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[    [ImplementPropertyChanged]
-    public class $ViewModelClassName$ : INavigationAware
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
         #region Repositories (遠端或本地資料存取)
 
         #endregion
