@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xfViewModelNoRegion2FullClassForFodyPropertyChanged</Title>
+      <Author>[USERNAME]</Author>
+      <Description>整個ViewModel 含類別名稱的完整 Prism 注入物件  - 使用 PropertyChanged.Fody</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>xfViewModelNoRegion2FullClassForFodyPropertyChanged</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>MainPageViewModel</ID>
+          <ToolTip>ViewModel的類別名稱</ToolTip>
+          <Default>MainPageViewModel</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public class $MainPageViewModel$ : INotifyPropertyChanged, INavigationAware
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public readonly IPageDialogService _dialogService;
+        private readonly INavigationService _navigationService;
+        private readonly IEventAggregator _eventAggregator;
+
+        public $MainPageViewModel$(INavigationService navigationService, IEventAggregator eventAggregator,
+            IPageDialogService dialogService)
+        {
+            _dialogService = dialogService;
+            _eventAggregator = eventAggregator;
+            _navigationService = navigationService;
+
+        }
+
+
+        public void OnNavigatedFrom(NavigationParameters parameters)
+        {
+
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+
+        }
+
+        public void OnNavigatedTo(NavigationParameters parameters)
+        {
+        }
+
+    }
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
