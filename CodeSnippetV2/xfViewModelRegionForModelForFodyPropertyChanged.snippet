@@ -22,7 +22,11 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[public class ViewModel的類別名稱 : INotifyPropertyChanged
+      <Code Language="csharp" Delimiter="$"><![CDATA[    using System.ComponentModel;
+    using Prism.Events;
+    using Prism.Navigation;
+    using Prism.Services;
+public class ViewModel的類別名稱 : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

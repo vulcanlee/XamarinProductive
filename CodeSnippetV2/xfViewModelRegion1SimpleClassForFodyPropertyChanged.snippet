@@ -23,7 +23,11 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
+      <Code Language="csharp" Delimiter="$"><![CDATA[    using System.ComponentModel;
+    using Prism.Events;
+    using Prism.Navigation;
+    using Prism.Services;
+public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
