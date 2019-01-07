@@ -82,19 +82,17 @@ public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
         #endregion
 
         #region Navigation Events (頁面導航事件)
-        public void OnNavigatedFrom(NavigationParameters parameters)
+        public void OnNavigatedFrom(INavigationParameters parameters)
         {
-
         }
 
-        public void OnNavigatingTo(NavigationParameters parameters)
-        {
-
-        }
-
-        public async void OnNavigatedTo(NavigationParameters parameters)
+        public async void OnNavigatedTo(INavigationParameters parameters)
         {
             await ViewModelInit();
+        }
+
+        public void OnNavigatingTo(INavigationParameters parameters)
+        {
         }
         #endregion
 

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>xfDataBindingPrismProperty</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>xfDataBindingPrismProperty</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>string</ID>
+          <ToolTip>Property Type</ToolTip>
+          <Default>string</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Title</ID>
+          <ToolTip>Property Name</ToolTip>
+          <Default>Title</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[#region $Title$ Property
+private $string$ _$Title$;
+public $string$ $Title$
+{
+    get { return _$Title$; }
+    set { SetProperty(ref _$Title$, value); }
+}
+#endregion
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
