@@ -30,16 +30,16 @@ public class $MainPageViewModel$ : INotifyPropertyChanged, INavigationAware
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public readonly IPageDialogService _dialogService;
-        private readonly INavigationService _navigationService;
-        private readonly IEventAggregator _eventAggregator;
+        public readonly IPageDialogService dialogService;
+        private readonly INavigationService navigationService;
+        private readonly IEventAggregator eventAggregator;
 
         public $MainPageViewModel$(INavigationService navigationService, IEventAggregator eventAggregator,
             IPageDialogService dialogService)
         {
-            _dialogService = dialogService;
-            _eventAggregator = eventAggregator;
-            _navigationService = navigationService;
+            this.dialogService = dialogService;
+            this.eventAggregator = eventAggregator;
+            this.navigationService = navigationService;
 
         }
 

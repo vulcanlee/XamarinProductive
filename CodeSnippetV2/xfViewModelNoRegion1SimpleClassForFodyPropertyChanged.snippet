@@ -30,11 +30,11 @@ public class $MainPageViewModel$ : INotifyPropertyChanged, INavigationAware
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private readonly INavigationService _navigationService;
+        private readonly INavigationService navigationService;
 
         public $MainPageViewModel$(INavigationService navigationService)
         {
-            _navigationService = navigationService;
+            this.navigationService = navigationService;
 
         }
 

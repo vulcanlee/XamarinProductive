@@ -55,9 +55,9 @@ public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
         #endregion
 
         #region 注入物件欄位
-        public readonly IPageDialogService _dialogService;
-        private readonly INavigationService _navigationService;
-        private readonly IEventAggregator _eventAggregator;
+        public readonly IPageDialogService dialogService;
+        private readonly INavigationService navigationService;
+        private readonly IEventAggregator eventAggregator;
         #endregion
 
         #endregion
@@ -69,9 +69,9 @@ public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
 
             #region 相依性服務注入的物件
 
-            _dialogService = dialogService;
-            _eventAggregator = eventAggregator;
-            _navigationService = navigationService;
+            this.dialogService = dialogService;
+            this.eventAggregator = eventAggregator;
+            this.navigationService = navigationService;
             #endregion
 
             #region 頁面中綁定的命令

@@ -56,7 +56,7 @@ public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
         #endregion
 
         #region 注入物件欄位
-        private readonly INavigationService _navigationService;
+        private readonly INavigationService navigationService;
         #endregion
 
         #endregion
@@ -67,7 +67,7 @@ public class $ViewModelClassName$ : INotifyPropertyChanged, INavigationAware
 
             #region 相依性服務注入的物件
 
-            _navigationService = navigationService;
+            this.navigationService = navigationService;
             #endregion
 
             #region 頁面中綁定的命令
